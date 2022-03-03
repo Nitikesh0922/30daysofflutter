@@ -13,6 +13,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   String name = "";
   bool changeButton = false;
+  bool hidePassword = true;
 
   final _formKey = GlobalKey<FormState>();
 
@@ -78,11 +79,20 @@ class _LoginPageState extends State<LoginPage> {
                         },
                       ),
                       TextFormField(
-                        obscureText: true,
+                        obscureText: hidePassword,
                         decoration: InputDecoration(
-                          hintText: "Enter Password",
-                          labelText: "Password",
-                        ),
+                            hintText: "Enter Password",
+                            labelText: "Password",
+                            suffixIcon: IconButton(
+                                onPressed: () {
+                                  setState(() {
+                                    hidePassword = !hidePassword;
+                                  });
+                                },
+                                color: Colors.deepPurple.withOpacity(0.4),
+                                icon: Icon(hidePassword
+                                    ? Icons.visibility_off
+                                    : Icons.visibility))),
                         validator: (value) {
                           if (value!.isEmpty) {
                             return "Password cannot be empty.";
