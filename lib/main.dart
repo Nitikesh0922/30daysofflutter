@@ -19,13 +19,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       //home: HomePage(),
-      //debugShowCheckedModeBanner: false, //for debug banner remove on developement time
+      debugShowCheckedModeBanner:
+          false, //for debug banner remove on developement time
       themeMode: ThemeMode.light,
       theme: ThemeData(
           primarySwatch: Colors.deepPurple,
           fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: "/",
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
