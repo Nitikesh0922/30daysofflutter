@@ -1,0 +1,67 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "iPhone 11 Pro",
+            "desc": "Apple iPhone 11th generation",
+            "price": 999,
+            "color": "#33505a",
+            "image":
+            "https://image.dhgate.com/0x0s/f2-albu-g20-M01-9D-83-rBVaqWCh5xuAHpUgAAMJbJUpYFE872.jpg/iphone-11-pro-max-refurbished-original-apple.jpg"
+        },
+        {
+            "id": 2,
+            "name": "iPhone 12 Pro",
+            "desc": "Apple iPhone 12th generation",
+            "price": 699,
+            "color": "#33505a",
+            "image":
+            "https://static-www.o2.co.uk/sites/default/files/apple-iphone-12-mini-purple-sku-header-210421.png"
+        },
+        {
+            "id": 3,
+            "name": "Pixel 5",
+            "desc": "Google Pixel phone 5th generation",
+            "price": 799,
+            "color": "#33505a",
+            "image":
+            "https://m.media-amazon.com/images/I/51TBGFIiWKL._AC_SS450_.jpg"
+        },
+        {
+            "id": 4,
+            "name": "M1 Book Air",
+            "desc": "Apple Makebook air with apple silicon",
+            "price": 899,
+            "color": "#33505a",
+            "image":
+            "https://as-images.apple.com/is/HA244?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1631831826000"
+        },
+        {
+            "id": 5,
+            "name": "Airpod Pro",
+            "desc": "Apple Aipods Pro 1st generation",
+            "price": 299,
+            "color": "#33505a",
+            "image":
+            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWP22?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1591634795000"
+        },
+        {
+            "id": 6,
+            "name": "iPad Pro",
+            "desc": "Apple iPad Pro 2020 edition",
+            "price": 399,
+            "color": "#33505a",
+            "image":
+            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_IN_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617923524000"
+        },
+        {
+            "id": 7,
+            "name": "Galaxy S21 Ultra",
+            "desc": "Samsung Galaxy S21 Ultra 2021 edition",
+            "price": 1299,
+            "color": "#33505a",
+            "image":
+            "https://d1eh9yux7w8iql.cloudfront.net/product_images/None_eb677d9c-73ba-4393-afc1-3d805d963ec2.jpg"
+        }
+    ]
+}
