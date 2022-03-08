@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_const_constructors,unnecessary_null_comparison
+// ignore_for_file: prefer_const_constructors,unnecessary_null_comparison, deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/models/catalog.dart';
-import 'package:flutter_catalog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class HomeDetailPage extends StatelessWidget {
@@ -17,9 +16,9 @@ class HomeDetailPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
       ),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -28,13 +27,13 @@ class HomeDetailPage extends StatelessWidget {
                 .text
                 .bold
                 .xl4
-                .color(MyTheme.darkBluishColor)
+                .color(context.accentColor)
                 .make(),
             ElevatedButton(
               onPressed: () {},
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(MyTheme.darkBluishColor),
+                    MaterialStateProperty.all(context.theme.buttonColor),
                 shape: MaterialStateProperty.all(StadiumBorder()),
               ),
               child: "Add To Cart".text.xl.make(),
@@ -56,19 +55,21 @@ class HomeDetailPage extends StatelessWidget {
               edge: VxEdge.TOP,
               arcType: VxArcType.CONVEY,
               child: Container(
-                color: Colors.white,
+                color: context.cardColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [
                     catalog.name.text.xl4
-                        .color(MyTheme.darkBluishColor)
+                        .color(context.accentColor)
                         .bold
                         .make(),
                     catalog.desc.text.xl
-                        .color(Color.fromARGB(255, 150, 151, 151))
+                        .color(
+                          context.accentColor,
+                        )
                         .make(),
                     10.heightBox,
-                    "Sed ea erat dolores magna ut invidunt, et est diam vero sit stet, amet no diam et elitr eirmod accusam labore rebum. Lorem at sed et dolores stet, lorem sadipscing accusam sit ipsum lorem at aliquyam diam, sed voluptua ipsum sed et eirmod magna et stet, elitr tempor sit diam. Elitr justo ipsum et voluptua et tempor eirmod et sanctus. Stet diam dolor lorem ut accusam invidunt. Accusam lorem at voluptua at sit kasd dolores, et stet gubergren sadipscing ut lorem kasd kasd at dolor. Amet erat kasd ipsum justo amet, sit takimata stet no dolores ipsum. Lorem lorem eos."
+                    "Sed ea erat dolores magna ut invidunt, et est diam vero sit stet, amet no diam et elitr eirmod accusam labore rebum. Lorem at sed et dolores stet, lorem sadipscing accusam sit ipsum lorem at aliquyam diam, sed voluptua ipsum sed et eirmod magna et stet, elitr tempor sit diam. Elitr justo ipsum et voluptua et tempor eirmod et sanctus."
                         .text
                         .color(Color.fromARGB(255, 150, 151, 151))
                         .make()

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       //home: HomePage(),
       debugShowCheckedModeBanner:
           false, //for debug banner remove on developement time
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
       initialRoute: MyRoutes.homeRoute,
