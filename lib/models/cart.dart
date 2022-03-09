@@ -1,6 +1,8 @@
 // ignore_for_file: unnecessary_null_comparison
 
+import 'package:flutter_catalog/core/store.dart';
 import 'package:flutter_catalog/models/catalog.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class CartModel {
   //catalog fields
@@ -34,5 +36,15 @@ class CartModel {
   // Remove Items
   void remove(Item item) {
     _itemIds.remove(item.id);
+  }
+}
+
+class AddMutations extends VxMutation<MyStore> {
+  final Item item;
+
+  AddMutations(this.item);
+  @override
+  perform() {
+    store?.cart._itemIds.add(item.id);
   }
 }
