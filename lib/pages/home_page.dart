@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: context.canvasColor,
       floatingActionButton: VxBuilder(
         builder: (context, store, status) => FloatingActionButton(
-          onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+          onPressed: () => context.vxNav.push(Uri.parse(MyRoutes.cartRoute)),
           // ignore: deprecated_member_use
           backgroundColor: context.theme.buttonColor,
           child: Icon(
